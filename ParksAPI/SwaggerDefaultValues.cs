@@ -1,11 +1,11 @@
+using Microsoft.AspNetCore.Mvc.ApiExplorer;
+using Microsoft.OpenApi.Models;
+using Swashbuckle.AspNetCore.SwaggerGen;
+using System.Linq;
+using System.Text.Json;
+
 namespace ParksAPI
 {
-    using Microsoft.AspNetCore.Mvc.ApiExplorer;
-    using Microsoft.OpenApi.Models;
-    using Swashbuckle.AspNetCore.SwaggerGen;
-    using System.Linq;
-    using System.Text.Json;
-
     public class SwaggerDefaultValues : IOperationFilter
     {
       public void Apply(OpenApiOperation operation, OperationFilterContext context)

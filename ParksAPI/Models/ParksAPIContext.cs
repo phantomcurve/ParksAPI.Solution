@@ -4,7 +4,10 @@ namespace ParksAPI.Models
 {
     public class ParksAPIContext : DbContext
     {
-      public ParksAPIContext(DbContextOptions<ParksAPIContext> options) : base(options) { }
+      public ParksAPIContext(DbContextOptions<ParksAPIContext> options) 
+          : base(options) 
+      { 
+      }
       protected override void OnModelCreating(ModelBuilder builder)
       {
         builder.Entity<Park>()
